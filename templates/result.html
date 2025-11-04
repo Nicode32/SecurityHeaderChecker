@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scan Result | CyberGuard</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="result-container">
+        <h1 class="main-title">SCAN <span>RESULT</span></h1>
+
+        <div class="score-box">
+            <h2>Security Score: <span>{{ score }}%</span></h2>
+            <p class="grade">Grade: {{ grade }}</p>
+        </div>
+
+        <div class="chart-area">
+            <img src="{{ url_for('static', filename='chart.png') }}" alt="Pie Chart">
+        </div>
+
+        <a href="{{ url_for('home') }}" class="back-btn">← Scan Another Website</a>
+    </div>
+
+</body>
+</html>

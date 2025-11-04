@@ -1,0 +1,19 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberGuard | Scan Website</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="hero">
+        <h1 class="main-title">CYBER<span>GUARD</span></h1>
+        <p class="sub-title">Scan • Analyze • Secure</p>
+
+        <form action="/scan" method="post" class="scan-box">
+            <input type="text" name="url" placeholder="Enter Website URL" required>
+            <button type="submit">Start Scan</button>
+        </form>
+    </div>
+</body>
+</html>
