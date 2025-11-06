@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Scan Result | CyberGuard</title>
-      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-
     <div class="result-container">
         <h1 class="main-title">SCAN <span>RESULT</span></h1>
 
@@ -19,8 +18,26 @@
             <img src="{{ url_for('static', filename='chart.png') }}" alt="Pie Chart">
         </div>
 
+        <h2 class="header-heading">Header Analysis</h2>
+
+        <table class="header-table">
+            <tr>
+                <th>Header</th>
+                <th>Status</th>
+            </tr>
+            {% for name, status in header_status %}
+            <tr>
+                <td>{{ name }}</td>
+                {% if status == 'Present' %}
+                <td class="ok">Present</td>
+                {% else %}
+                <td class="missing">Missing</td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </table>
+
         <a href="{{ url_for('home') }}" class="back-btn">← Scan Another Website</a>
     </div>
-
 </body>
 </html>

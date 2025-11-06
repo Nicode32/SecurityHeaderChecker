@@ -6,15 +6,16 @@ body {
     text-align: center;
 }
 
-
 .main-title {
     font-size: 3rem;
     margin-top: 80px;
     letter-spacing: 3px;
     text-shadow: 0 0 10px #00ffe7;
 }
-.main-title span { color: #00ffe7; }
 
+.main-title span {
+    color: #00ffe7;
+}
 
 .sub-title {
     margin-top: -10px;
@@ -22,10 +23,10 @@ body {
     text-shadow: 0 0 5px #00997a;
 }
 
-
 .scan-box {
     margin-top: 40px;
 }
+
 .scan-box input {
     width: 320px;
     padding: 12px;
@@ -34,10 +35,11 @@ body {
     outline: none;
     font-size: 1rem;
     text-align: center;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
     color: #00ffe7;
     box-shadow: 0 0 10px #00ffe7;
 }
+
 .scan-box button {
     margin-top: 15px;
     padding: 10px 40px;
@@ -50,32 +52,36 @@ body {
     color: #000;
     transition: 0.3s;
 }
+
 .scan-box button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #00ffe7;
 }
 
-
 .result-container {
     margin-top: 60px;
 }
+
 .score-box {
     margin: 20px auto;
     width: 300px;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 15px #00ffe7;
 }
+
 .score-box span {
     color: #00ffe7;
 }
+
 .chart-area img {
     margin-top: 30px;
     width: 300px;
     border-radius: 10px;
     box-shadow: 0 0 20px #00ffe7;
 }
+
 .back-btn {
     display: inline-block;
     margin-top: 25px;
@@ -83,4 +89,58 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-.back-btn:hover { text-shadow: 0 0 10px #00ffe7; }
+
+.back-btn:hover {
+    text-shadow: 0 0 10px #00ffe7;
+}
+
+/* ---------------- TABLE (Header Status) ---------------- */
+.header-heading {
+    color: #00ffe7;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    text-shadow: 0 0 10px #00ffe7;
+}
+
+.header-table {
+    width: 60%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 15px #00ffe7;
+}
+
+.header-table th {
+    padding: 12px 20px;
+    text-align: left;
+    background: rgba(0, 255, 231, 0.1);
+    color: #00ffe7;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #00ffe744;
+}
+
+.header-table td {
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    color: #fff;
+}
+
+.header-table tr:hover {
+    background: rgba(0, 255, 231, 0.05);
+    transition: 0.2s;
+}
+
+.ok {
+    color: #00ff88;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff88;
+}
+
+.missing {
+    color: #ff4d4d;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff4d4d;
+}
